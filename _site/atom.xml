@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Guides</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-06-27T18:19:31-05:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Luis Fernando García Acosta</name>
+   <email>lfgarciauaz@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Title page</title>
+   <link href="http://localhost:4000/2020/06/23/cover/"/>
+   <updated>2020-06-23T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2020/06/23/cover</id>
+   <content type="html">&lt;p&gt;hola&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
