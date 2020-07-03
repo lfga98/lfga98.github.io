@@ -3,3 +3,270 @@ layout: default
 title: Introduction
 ---
 <h1>Introduction</h1>
+
+Before we start I'm going to present more details about the guide. The most important thing I want you to note is the way the guide works. I will also present the CTF platforms we are going to use.
+
+
+<h2>Definitions</h2>
+
+<hr>
+<h2>Content</h2>
+<p>In this guide we are going to cover the following vulnerabilities.</p>
+
+<ul>
+  <li>Local/Remote File Inclusion - <i>OWASP TOP 10</i></li>
+  <li>Remote Code Execution</li>
+  <li>SQL Injection</li>
+  <li>Cross-site scripting(XSS) - <i>OWASP TOP 10</i></li>
+  <li>Session management</li>
+  <li>File upload</li>
+  <li>Authentication - <i>OWASP TOP 10</i></li>
+  <li>XML External Entity (XXE) - <i>OWASP TOP 10</i></li>
+  <li>Server side template injection</li>
+  <li>PHP vulnerabilities</li>
+</ul>
+<p>
+These vulnerabilities are the ones that we can find the most in CTF or machines and some are defined by <strong>OWASP</strong>
+</p>
+
+
+<hr>
+
+<h2>Platforms</h2>
+<p>The platforms that we are going to use through the guide are the following :</p>
+<h3>Hack the Box</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/htb.JPG'}}" alt=""></div>
+ <div class="column">
+   <p>An online platform to test and advance your skills in penetration testing and cyber security.
+     From this machine we are going to use some challenges. We will create our account later, don't worry about it.</p>
+   URL:
+   <a href="https://www.hackthebox.eu/">https://www.hackthebox.eu/</a>
+ </div>
+</div>
+
+
+<h3>Try Hack Me</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/THM.png'}}" alt=""></div>
+ <div class="column">
+   <p>Hack Instantly. Learn, practice and complete! Get hands on and practise your skills in a real-world environment by completing guided and interactive tasks.</p>
+   <p>
+     Feel free to go and create your account if you don't have one and also explore the platform.
+   </p>
+   URL:
+   <a href="https://tryhackme.com/">https://tryhackme.com/</a>
+ </div>
+</div>
+
+
+
+<h3>Root me</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/root.png'}}" alt=""></div>
+ <div class="column">
+   <p>Root Me is a platform for everyone to test and improve knowledge in computer security and hacking.</p>
+   <p>
+     Feel free to go and create your account if you don't have one and also explore the platform.
+   </p>
+   URL:
+   <a href="https://www.root-me.org/">https://www.root-me.org/</a>
+ </div>
+</div>
+
+<h3>Pico CTF</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/pico.png'}}" alt=""></div>
+ <div class="column">
+   <p>picoCTF is a free computer security game targeted at middle and high school students, created by security experts at Carnegie Mellon University. The game consists of a series of challenges centered around a unique storyline where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. </p>
+
+   URL:
+   <a href="https://picoctf.com/">https://picoctf.com/</a>
+ </div>
+</div>
+
+
+
+<h3>RingZer0 Team Online CTF</h3>
+<img src="{{ '/assets/ring.png'}}" alt="" class="centered">
+
+   <p>RingZer0 Team's online CTF offers you tons of challenges designed to test and improve your hacking skills through hacking challenges. Register and get a flag for every challenge.  </p>
+   <p>URL:<a href="https://ringzer0ctf.com">https://ringzer0ctf.com</a></p>
+
+<h3>Ctflearn</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/cftl.jpg'}}" alt=""></div>
+ <div class="column">
+   <p>CTFlearn is an ethical hacking platform that enables tens of thousands to learn, practice, and compete. </p>
+   <p>We host an ever-changing array of user-submitted and community-verified challenges in a wide range of topics.</p>
+
+   URL:
+   <a href="https://ctflearn.com/">https://ctflearn.com/</a>
+ </div>
+</div>
+
+
+<h3>Portswigger</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/port.png'}}" alt=""></div>
+ <div class="column">
+   <p>This platform offers lots of things, but we only need the web academy, but you should see all the cool stuff in here.</p>
+
+   URL:
+   <a href="https://portswigger.net/">https://portswigger.net/</a>
+ </div>
+</div>
+
+
+<h3>CtfChallenge</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/ctfc.jpg'}}" alt=""></div>
+ <div class="column">
+   <p>CTFchallenge is a series of web application hacking challenges created by <a href="https://twitter.com/adamtlangley">@adamtlangley</a>. Each challenge is built on its own domain and acts like a real functioning website or application.</p>
+
+   URL:
+   <a href="https://ctfchallenge.co.uk/">https://ctfchallenge.co.uk/</a>
+ </div>
+</div>
+
+
+
+<h3>Pentesterlab</h3>
+
+<div class="row">
+ <div class="column"><img src="{{ '/assets/pentester.png'}}" alt=""></div>
+ <div class="column">
+   <p>This is an academy with labs that have vulnerabilities, we are going to use this as practice.</p>
+
+   URL:
+   <a href="https://pentesterlab.com/">https://pentesterlab.com/</a>
+ </div>
+</div>
+
+
+<h4>Note: some descriptions we have not written, they are typical of the sites.
+
+</h4>
+
+
+<hr>
+
+<h2>Requirements</h2>
+
+<h3>Software</h3>
+<p>Feel free to jump this section if you have installed all the programs in this list or if you have a machine running Kali Linux.</p>
+
+<p>I highly recommend to install Kali linux the only reason is because it comes with all the tools that we are going to need. I recommend these videos.</p>
+
+<h4>Video in English:</h4>
+<a href="https://www.youtube.com/watch?v=qH8Igk2wF9o"> INSTALL KALI LINUX ON VIRTUAL BOX</a>
+
+<h4>Video in Spanish</h4>
+<a href="https://www.youtube.com/watch?v=fY74rf9iVrE">Instalar KaliLinux 2020 en VirtualBox</a>
+
+
+<h4>Software that we are going to need:</h4>
+<p>We just need some installed software components, which I am going to ask you to do the research on how to install and make sure it works properly.</p>
+
+<ul>
+  <li>SQLMap</li>
+  <li>Burpsuite</li>
+  <li>Python</li>
+</ul>
+
+
+<h3>Additional</h3>
+
+<ul>
+  <li>No prior knowledge needed.</li>
+  <li>Patience</li>
+</ul>
+
+<hr>
+<h2>How it works?</h2>
+<p>The way I see it, it's not just playing CTF or try to solve CTF challenges, sometimes we can do it by doing some research and we'll learn something, but it's not the easiest way to do it. I highly recommend spending some time learning new concepts an the theoretical stuff that it's behind the CTF challenges, try to understand every behind a vulnerability. I consider that the theoretical information is really important, it's just as important the practical.
+ </p>
+<p>
+Knowing some theoretical information will mean that sometimes we can identify a vulnerability and know a better way to exploit it, which saves us time and frustrations.
+</p>
+
+<p>
+This is just my opinion and experience. The guide then will have 2 sections the <strong>learning</strong> section and the <strong>challenge</strong> section for each vulnerability.
+</p>
+
+<h3>The learning section</h3>
+<p>This section will focus only on learning things, learn theory, learn how to use tools and everything that has to do with learning. This section will include CTF challenges, sites, blogs, videos and everything we may need.</p>
+
+<p>In this section feel free to try everything, to explore, to read everything you need, to review and to break everything you find in your way. Remember something from Bob Ross! </p>
+
+<img src="{{ '/assets/bobross.png'}}" alt="">
+
+<p>Don't rush, it's worth it. In this section we are only here to learn, here it does not matter the places, skills or points on the CTF platforms.
+Take your time!</p>
+
+<small>Feel free to DM me if you think that something could be added or changed in this section of any vulnerability.</small>
+
+
+
+
+<h3>The challenge section</h3>
+<p>You'll get to this point once you have understood the vulnerability and the theory and you have a very good understanding. In this section You'll face CTF challenges, according to the vulnerability studied. You'll keep learning, but here you'll be able to identify the vulnerability and know how to exploit it. You'll never stop learning, and CTF challenges will help us here, to take your level of under to the next level.</p>
+
+
+<p>
+I'll put little hints, but the challenge will be accorded the knowledge and level that you should already have. If you think that you're failing or if you are having a bad time, feel free to go back, do some research or try harder.
+</p>
+
+<small>Feel free to DM me if you think that something could be added or changed in this section of any vulnerability.</small>
+
+<hr>
+
+<h2>Tips</h2>
+
+I'll share some tips, again based on my own experience.
+
+<h3>Take <strong>Ordered</strong> Notes</h3>
+
+<p>It's not only taking notes of everything, but instead try to do ordered notes. It is useless to have many notes if when you need something you can not find it or it takes a long time.</p>
+<p>Your notes are for consultation things that you have not yet memorized</p>
+<p>I also recommend taking notes with images, but if you add an image also add an explanation of what happens in the image, sometimes the text is useless without image and vice versa.</p>
+
+<p>This is just a recommendation, you'll find a way that just fits you.</p>
+
+
+<p>These are some applications that can help you with your notes, feel free to use any of them:</p>
+
+<h3>Cherry tree</h3>
+<p>
+  A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.
+</p>
+<p><a href="https://www.giuspen.com/cherrytree/">Download</a></p>
+<p><a href="https://opensource.com/article/19/5/cherrytree-notetaking">A little blog about cherry tree</a></p>
+
+
+
+<h3>One note</h3>
+<p><a href="https://www.onenote.com/download">Download</a></p>
+
+
+<h3>Joplin</h3>
+<p>We use Joplin for our notes, just for the Markdown language.</p>
+
+<p><a href="https://joplinapp.org/">Site</a></p>
+
+
+
+<h3>Take your time</h3>
+<p>Just take your time, try harder and be patient.</p>
+
+
+
+
+<small>Sorry for the long page but it was necessary.</small>
