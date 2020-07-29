@@ -574,3 +574,22 @@ a.pagination-item:hover {
 .center {
  text-align: center;
 }
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.jumbotron {
+  padding: 30px; /* fills out the jumbotron */
+  background-color:  #d6e0de ;
+}
+
+.container {
+  width: 90%; /* specify a width */
+  margin: 0 auto;  /* centers the container */
+  padding: 0 15px; /* adds some padding to the left and right*/
+}
