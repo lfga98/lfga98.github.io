@@ -9,12 +9,12 @@
 
   <title>
     
-      Template Injection &middot; LFGA
+      XXE &middot; LFGA
     
   </title>
 
   
-  <link rel="canonical" href="http://localhost:4000/web/template/learning/">
+  <link rel="canonical" href="http://localhost:4000/web/xxe/learning/">
   
 
   <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
@@ -85,13 +85,15 @@
       </div>
 
       <div class="container content">
-        <h1>Server-side Template Injection - Learning section</h1>
+        <h1>XXE - Learning Section</h1>
 
-
-<br>
+<hr>
 <h2>The Portswigger Web Academy</h2>
 <br>
-<img class="center-img" src="/assets/template/PSSSTI.png" alt="">
+<p>The portswigger academy has a wonderful and complete course about XXE, we'll start here.</p>
+<br>
+
+<img class="center-img" src="/assets/xxe/xxeport.png" alt="">
 
 
 <h3>Before you start</h3>
@@ -101,37 +103,79 @@
   <li>Take your notes they are very important.</li>
   <li>Try to do everything by yourself, but remember that we are learning so feel free to see the solution and follow it, you'll learn a lot</li>
   <li>Google is your friend.</li>
+  <li>Some of the labs will require Burpsuite pro edition if you don't have it feel free to jump the lab, but remember the theoretical part is important.</li>
 </ul>
 
-<p>Link: <a href="https://portswigger.net/web-security/server-side-template-injection">Server-side template injection - Portswigger</a></p>
+<p>Link: <a href="https://portswigger.net/web-security/xxe">XXE - Portswigger</a></p>
 <h3>After the activity</h3>
 <p>You now know:</p>
 <ul>
-  <li>What is server-side template injection.</li>
-  <li>The impact of server-side template injection.</li>
-  <li>How do server-side template injection vulnerabilities arise.</li>
-  <li>How to construct a server-side template injection attack.</li>
-  <li>Detect, identify and exploit a server-side template injection attack.</li>
-  <li>Look for information in the language documentation.</li>
-  <li>Look for known exploits.</li>
-  <li>Create a custom attack.</li>
+  <li>What is XML external entity injection.</li>
+  <li>How do XXE vulnerabilities arise.</li>
+  <li>What is XML.</li>
+  <li>What are XML entities.</li>
+  <li>What is document type definition.</li>
+  <li>What are XML custom entities.</li>
+  <li>What are XML external entities.</li>
+  <li>Exploit XXE to retrieve files.</li>
+  <li>Exploit XXE to perform SSRF attacks.</li>
+  <li>Exploit blind XXE to retrieve data via error messages.</li>
+  <li>Exploit blind XXE by repurposing a local DTD.</li>
+  <li>What are blind XXE vulnerabilities.</li>
+  <li>Perform XXE XInclude attacks.</li>
+  <li>Perform XXE attacks via file upload.</li>
+  <li>Perform XXE XXE attacks via modified content type.</li>
+</ul>
+<br>
+<hr>
+<h2>Try Hack Me</h2>
+
+<p>Now let's just reinforce what we just learned. Let's get back to a room that we have used previously and focus on XXE. The room is: <a href="https://tryhackme.com/room/owasptop10">OWASP Top 10</a></p>
+
+<img class="center-img" src="/assets/xxe/room.png" alt="">
+
+
+<p>And you have to do task 13, 14, 15 and 16.</p>
+
+
+<img class="center-img" src="/assets/xxe/tasks.png" alt="">
+
+<h3>Before you start</h3>
+<ul>
+  <li>This activity is like a reinforcement of what we already learned.</li>
+  <li>If is necessary supplement your notes</li>
+</ul>
+
+
+<h3>After the activity</h3>
+<ul>
+  <li>You have already reviewed what is a XML External Entity.</li>
+  <li>You have already reviewed what is XML.</li>
+  <li>You have already reviewed what is Document Type Definition in XML.</li>
+  <li>You have already reviewed what is a XXE payload.</li>
 </ul>
 
 <br>
 <hr>
-<h2>PayloadAllTheThings</h2>
+<h2>PayloadsAllTheThings</h2>
 
-<img class="center-img" src="/assets/template/payloadall.png" alt="">
+<p>If you need alternatives or want to see different ways to exploit XXE you can always go to PayloadsAllTheThings <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection">XML External Entity - PayloadsAllTheThings</a></p>
 
-<p>Here in this site you'll find some useful payloads and a brief explanation of how it works, so make sure to have a look at it. </p>
-<p>Also you can use this site and try the payloads in it when you are facing a challenge.</p>
-<p>Here is the link: <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">PayloadAllTheThings - Templates Injections</a></p>
+
+<img class="center-img" src="/assets/banner.png" alt="">
+
+<br>
 
 
 <hr>
-
+<div class="jumbotron">
+    <div class="container">
+      <p>That's all for the learning section. The portswigger course is very complete so if you did everything right, you won't have any trouble in the challenge section, but there are still lots of variations in XXE vulnerability. Let's get to the challenge section!.  </p>
+    </div>
+</div>
+<br>
 <div class="center">
-    <a href="/web/template/challenge" class="" >Challenge Section >></a></div>
+    <a href="/web/xxe/challenge" class="" >Challenge Section >></a></div>
 </div>
 <br>
 
