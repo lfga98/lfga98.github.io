@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      PHP Vulnerabilties &middot; LFGA
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/web/php/challenge/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>LFGA</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <a class="sidebar-nav-item" href="/web/index.html">Home</a>
+    <a class="sidebar-nav-item" href="/web/introduction/">Introduction</a>
+    <a class="sidebar-nav-item" href="/web/starting/">Starting...</a>
+    <a class="sidebar-nav-item" href="/web/authentication/">Authentication</a>
+    <a class="sidebar-nav-item" href="/web/file_upload/">File Upload</a>
+    <a class="sidebar-nav-item" href="/web/RFI-LFI/">RFI LFI</a>
+    <a class="sidebar-nav-item" href="/web/template/">Template Injection</a>
+    <a class="sidebar-nav-item" href="/web/sqli/">SQLI</a>
+    <a class="sidebar-nav-item" href="/web/xxe/">XXE</a>
+    <a class="sidebar-nav-item" href="/web/xss/">XSS</a>
+    <a class="sidebar-nav-item" href="/web/rce/">RCE</a>
+    <a class="sidebar-nav-item" href="/web/php/">PHP vulnerabilities</a>
+    <a class="sidebar-nav-item" href="/web/master/">Master</a>
+
+
+
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2020. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">LFGA</a>
+            <small>Web</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <h1>Challenge section</h1>
+<br>
+
+<div class="jumbotron">
+    <div class="container">
+      <h2>Before you start!</h2>
+      <p>In this section there will be few challenges, but they will require a lot of time and effort.</p>
+      <p>Google is your friend.</p>
+    </div>
+</div>
+<br>
+
+<h2>Challenge 1</h2>
+<p>Level: Easy-Medium</p>
+<p>Vulnerability: Assert()</p>
+<p>Hint: You can go back and see some examples.</p>
+<img class="center-img" src="/assets/php/challenge1.png" alt="">
+<p>Link: <a href="https://www.root-me.org/en/Challenges/Web-Server/PHP-assert">Challenge 1</a></p>
+
+<hr>
+<h2>Challenge 2</h2>
+<p>Level: Easy-Medium</p>
+<p>Vulnerability: preg_replace()</p>
+<p>Hint: You can go back and see some examples.</p>
+<img class="center-img" src="/assets/php/challenge2.png" alt="">
+<p>Link: <a href="https://www.root-me.org/en/Challenges/Web-Server/PHP-preg_replace">Challenge 2</a></p>
+
+
+<hr>
+<h2>Challenge 3</h2>
+<p>Level: Easy-Medium</p>
+<p>Vulnerability: PHP loose comparison</p>
+<p>Hint: Remember what is wrong with strcmp().</p>
+<p>Hint 2: Remember the cheat sheet when comparing booleans.</p>
+<img class="center-img" src="/assets/php/challenge2.png" alt="">
+<p>Link: <a href="https://www.root-me.org/en/Challenges/Web-Server/PHP-type-juggling">Challenge 3</a></p>
+
+
+<hr>
+<h2>Challenge 4</h2>
+<p>Level: Easy-Medium</p>
+<p>Vulnerability: PHP unserialize</p>
+<p>Hint: Try to remember what does the magic function do.</p>
+<img class="center-img" src="/assets/php/challenge4.png" alt="">
+<p>Link: <a href="https://adworld.xctf.org.cn/task/answer?type=web&number=3&grade=1&id=4821&page=1">Challenge 4</a></p>
+
+
+
+<hr>
+<h2>Challenge 5</h2>
+<p>Level: Medium</p>
+<p>Vulnerability: PHP unserialize</p>
+<p>Hint: Try to remember what does the magic function do.</p>
+<img class="center-img" src="/assets/php/challenge5.png" alt="">
+<p>Link: <a href="https://adworld.xctf.org.cn/task/answer?type=web&number=3&grade=1&id=5409&page=1">Challenge 5</a></p>
+
+
+<hr>
+<h2>Challenge 6</h2>
+<p>Level: Hard</p>
+<p>Vulnerability: PHP serialize</p>
+<p>Hint: Try to understand what the code is doing.</p>
+<img class="center-img" src="/assets/php/challenge6.png" alt="">
+<p>Link: <a href="https://www.wechall.net/challenge/are_you_serial/index.php">Challenge 6</a></p>
+
+
+
+<hr>
+<h2>Challenge 7</h2>
+<p>Level: Hard</p>
+<p>Vulnerability: PHP preg_replace()</p>
+<p>Hint: Try to understand what the code is doing.</p>
+<img class="center-img" src="/assets/php/challenge7.png" alt="">
+<p>Link: <a href="https://www.wechall.net/challenge/noother/preg_evasion/index.php">Challenge 7</a></p>
+
+
+<hr>
+<h2>Challenge 8</h2>
+<p>Level: Hard</p>
+<p>Vulnerability: PHP serialization</p>
+<p>Hint: Try to understand what the code is doing.</p>
+<p>Hint: What is the cookie doing?.</p>
+<img class="center-img" src="/assets/php/challenge8.png" alt="">
+<p>Link: <a href="https://www.root-me.org/en/Challenges/Web-Server/PHP-Serialization">Challenge 8</a></p>
+
+
+
+<br>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      PHP Vulnerabilties &middot; LFGA
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/web/php/learning/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>LFGA</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <a class="sidebar-nav-item" href="/web/index.html">Home</a>
+    <a class="sidebar-nav-item" href="/web/introduction/">Introduction</a>
+    <a class="sidebar-nav-item" href="/web/starting/">Starting...</a>
+    <a class="sidebar-nav-item" href="/web/authentication/">Authentication</a>
+    <a class="sidebar-nav-item" href="/web/file_upload/">File Upload</a>
+    <a class="sidebar-nav-item" href="/web/RFI-LFI/">RFI LFI</a>
+    <a class="sidebar-nav-item" href="/web/template/">Template Injection</a>
+    <a class="sidebar-nav-item" href="/web/sqli/">SQLI</a>
+    <a class="sidebar-nav-item" href="/web/xxe/">XXE</a>
+    <a class="sidebar-nav-item" href="/web/xss/">XSS</a>
+    <a class="sidebar-nav-item" href="/web/rce/">RCE</a>
+    <a class="sidebar-nav-item" href="/web/php/">PHP vulnerabilities</a>
+    <a class="sidebar-nav-item" href="/web/master/">Master</a>
+
+
+
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2020. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">LFGA</a>
+            <small>Web</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <h1>PHP Vulnerabilities - Learning Section</h1>
+
+<hr>
+<h2>The vulnerability of assert()</h2>
+
+<p>The first thing that we need to know is what does the assert function do. Source:<a href="https://www.phptutorial.info/?assert">assert</a></p>
+
+<img class="center-img" src="/assets/php/assertdef.png" alt="">
+
+
+<br>
+
+<p>The assert() will check the given assertion and take appropriate action if its result is FALSE. </p>
+
+<p>The vulnerability lies in this part: <i>If the assertion is given as a string it will be evaluated as PHP code by assert().</i></p>
+<p>Reviewing the documentation we can see that it is not a vulnerability of the function, but rather the misuse or bad practices of the developers.</p>
+
+<p>Let's see a little example of it: <a href="https://www.codetd.com/en/article/8273544">PHP-Assert()</a></p>
+
+<p>Basically what we are going to look for is to identify how the assert is working and from there build a payload that contains a string to be executed as PHP code.</p>
+
+<hr>
+
+<h2>The vulnerability of preg_replace()</h2>
+
+<p>In first place, let's read the documentation <a href="https://www.php.net/manual/en/function.preg-replace.php">preg_replace</a>.</p>
+
+<img class="center-img" src="/assets/php/preg_replace.png" alt="">
+<p>Now that we now know what does the preg_replace function do, we can see how it can be exploited, here: <a href="https://www.yeahhub.com/code-execution-preg_replace-php-function-exploitation/">preg_replace() PHP Function Exploitation</a>.</p>
+
+<p>And finally the <a href="https://bitquark.co.uk/blog/2013/07/23/the_unexpected_dangers_of_preg_replace"> The unexpected dangers of preg_replace()</a>.</p>
+
+
+<hr>
+
+
+<h2>Type Juggling and Comparisons</h2>
+
+<p>First, let's see an explanation of what it is, you can find it here: <a href="http://berlinonline.github.io/php-introduction/chapters/type_juggling/">Type Juggling and Comparisons.</a> Source:</p>
+
+
+<img class="center-img" src="/assets/php/php_guide.png" alt="">
+
+
+
+<p>And now we can see an example <a href="https://hydrasky.com/network-security/php-string-comparison-vulnerabilities/">PHP String comparison vulnerabilities</a>. </p>
+<p>You can find a nice cheat sheet here: <a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/">Comparison PHP cheat sheet.</a></p>
+
+<p>And this one too: <a href="https://phpcheatsheets.com/compare/">PHP Variable Comparison</a>. </p>
+<p>These are really usefull cheat sheets that could help us with a challenge.</p>
+
+
+
+<hr>
+
+
+<h2>PHP Object Injection</h2>
+
+<p>Last but not least we are going to learn what is PHP Object Injection, this is very common to find in CTF and understanding how it works and how to exploit it is a must.</p>
+
+<p>First, let's see what are we talking about: <a href="https://blog.ripstech.com/2018/php-object-injection/">What is PHP Object Injection.</a></p>
+
+<p>Now let's see some examples: <a href="https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection">PHP Object Injection</a></p>
+
+
+<p>Now you should know what does the magic methods do: <a href="https://www.tutorialdocs.com/article/16-php-magic-methods.html">16 Magic Methods That PHP Developers Must Know</a> and the cheat: <a href="https://code.tutsplus.com/tutorials/php-magic-methods-cheat-sheet--cms-34681">PHP Magic Methods Cheatsheet</a>.</p>
+
+
+
+
+
+<br>
+<div class="jumbotron">
+    <div class="container">
+      <h2>That's all!</h2>
+      <p>There are a lot of vulnerabilities, but we can't go through all of them, but you can always research about a specific method, now let's go to the challenge section.</p>
+    </div>
+</div>
+
+
+<br>
+
+<div class="center">
+    <a href="/web/php/challenge" class="" >Challenge Section >></a></div>
+</div>
+<br>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
