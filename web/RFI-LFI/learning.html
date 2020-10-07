@@ -1,0 +1,86 @@
+---
+layout: default
+title: RFI LFI
+---
+<h1>RFI LFI - Learning Section</h1>
+
+<hr>
+<h2>LFI</h2>
+
+<p>First, let's see what is LFI.</p>
+<p>The first definition  is <a href="https://www.acunetix.com/blog/articles/local-file-inclusion-lfi/">here</a>.</p>
+
+<p>We now have some information, let's complement it with this other blog. This is a real cool blog, visit it from time to time if you want to learn something new. </p>
+<img class="center" src="{{ '/assets/fileinclusion/blog.png'}}" alt="">
+
+<p>The LFI article is here: <a href="https://www.neuralegion.com/blog/local-file-inclusion-lfi/">Local File Inclusion (LFI) - What is LFI and how to deal with it</a>.</p>
+
+<p>Now you know:</p>
+<ul>
+  <li>What LFI is.</li>
+  <li>What Directory Traversal is.</li>
+  <li>How LFI work.</li>
+  <li>The impact of LFI.</li>
+  <li>How to prevent LFI</li>
+</ul>
+
+
+<hr>
+<h2>RFI</h2>
+
+
+<p>In RFI we are only going to concentrate on the theoretical part since they are very rarely presented in a CTF. So we are only going to see an article where they explain what is needed to understand this vulnerability a bit. <a href="https://www.netsparker.com/blog/web-security/remote-file-inclusion-vulnerability/">What is the Remote File Inclusion vulnerability?</a></p>
+
+
+<p>Now you know:</p>
+<ul>
+  <li>What RFI is.</li>
+  <li>How RFI arises.</li>
+  <li>How RFI work.</li>
+  <li>How RFI is exploited.</li>
+  <li>The impact of RFI.</li>
+  <li>Prevention.</li>
+</ul>
+
+<hr>
+<h2>LFI vs RFI</h2>
+
+
+<p>Now, if the difference between these two vulnerabilities is not clear enough we can find a nice article explaining the difference <a href="https://www.imperva.com/learn/application-security/rfi-remote-file-inclusion/"> here</a>.</p>
+
+<hr>
+
+<h2>Burpsuite</h2>
+<p>Burpsuite can help us a lot to identify and exploit this vulnerability. The Portswigger academy shows us in this <a href="https://portswigger.net/support/using-burp-to-test-for-path-traversal-vulnerabilities">tutorial</a> how to use the repeater to exploit LFI.</p>
+
+<p>We also know how to use the intruder so why don't we just include a payload list like this<a href="https://git.linuxtrack.net/Azgarech/PayloadsAllTheThings/-/blob/4e1077c25e5bc705a59e11337b9f179d7a814e1d/File%20Inclusion%20-%20Path%20Traversal/Intruders/List_Of_File_To_Include.txt"> one</a> and let the intruder do the job.</p>
+<p>Now you know:</p>
+<ul>
+  <li>How to use the repeater to exploit LFI.</li>
+</ul>
+
+
+<hr>
+<h2>PayloadsAllTheThings</h2>
+<p>Always remember when you face a challenge, you can always check payloadallthethings as it has many pre-made examples and payloads. <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/File%20Inclusion">Here</a> the file inclusion section.</p>
+
+<img class="center" src="{{ '/assets/template/payloadall.png'}}" alt="">
+<hr>
+<h2>TryHackMe</h2>
+
+<p>To finish off with this section, let's do a guided room before you go ahead to the challenge section. In this wonderful room you are going to review some theoretical information, exploit a basic LFI, exploit an LFI using Directory Traversal and finally use the Log Poisoning technique to gain a reverse shell from LFI vulnerability.</p>
+
+
+<img class="center" src="{{ '/assets/fileinclusion/thmlfi.png'}}" alt="">
+
+<a href="https://tryhackme.com/room/lfibasics">LFI Basics</a>
+<p>Really try to take advantage of this room, it is very well designed to learn and remember to add everything to your notes, see you in the challenges section.
+</p>
+<br>
+
+
+<div class="center">
+<a href="{{ site.github.repo }}/web/RFI-LFI/challenge" class="" >Challenge Section >></a>
+  </div>
+
+<br>

@@ -3,3 +3,50 @@ layout: default
 title: RFI LFI
 ---
 <h1>RFI LFI</h1>
+
+
+<p>Welcome!. In this section we are going to learn what's LFI and RFI and we are going to solve some LFI challenges. In this section we need to know some interesting files that we can find in OS.</p>
+
+<img class="center" src="{{ '/assets/fileinclusion/etc-passwd.png'}}" alt="">
+
+<h2>Linux interesting files.</h2>
+<p>These are some interesting files in linux, there are many more: </p>
+<ul>
+  <li>/etc/passwd</li>
+  <li>/etc/shadow</li>
+  <li>/etc/group</li>
+  <li>/etc/init.d/</li>
+  <li>/etc/hostname</li>
+  <li>/etc/network/interfaces</li>
+  <li>/etc/profile</li>
+  <li>~/.ssh/</li>
+  <li>~/.bash_history</li>
+  <li>/var/log/</li>
+  <li>/var/log/apache2/access.log or /var/log/httpd/access.log</li>
+</ul>
+
+<p>The most interesting files in this list are /etc/passwd and /etc/shadow, these are the one that we commonly look for in a pentest. Let's see what these files are. First, we need to understand the /etc/passwd, you can do it here <a href="https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/">here</a>. And now the /etc/shadow <a href="https://www.cyberciti.biz/faq/understanding-etcshadow-file/">here</a>.</p>
+
+
+<h2>Windows interesting files.</h2>
+
+<p>Remember that Windows is also important.</p>
+<ul>
+  <li>C:/Users/Administrator/NTUser.dat</li>
+  <li>C:/Documents and Settings/Administrator/NTUser.dat</li>
+  <li>C:/apache/logs/access.log</li>
+  <li>C:/apache/logs/error.log</li>
+  <li>C:/apache/php/php.ini</li>
+</ul>
+
+<p>And many more. The one that we need to focus on is the NTUser.dat file you can find more info <a href="https://www.howtogeek.com/401365/what-is-the-ntuser.dat-file/"> here</a>. </p>
+
+<br>
+
+
+<div class="center">
+<a href="{{ site.github.repo }}/web/RFI-LFI/learning" class="" >Learning Section >></a>
+  </div>
+
+  <br>
+  <br>
