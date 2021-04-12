@@ -308,10 +308,7 @@ footer { margin-top: var(--spacer-3); margin-bottom: var(--spacer-3); }
 
 a.pagination-item:hover { background-color: var(--border-color); }
 
-@media (min-width: 30em) { .pagination { margin: var(--spacer-3) 0; }
-  .pagination-item { float: left; width: 50%; border-width: 1px; }
-  .pagination-item:first-child { margin-bottom: 0; border-top-left-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); }
-  .pagination-item:last-child { margin-left: -1px; border-top-right-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); } }
+@media (min-width: 30em) { .pagination { margin: var(--spacer-3) 0; } .pagination-item { float: left; width: 50%; border-width: 1px; } .pagination-item:first-child { margin-bottom: 0; border-top-left-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); } .pagination-item:last-child { margin-left: -1px; border-top-right-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); } }
 
 .message { padding: var(--spacer); margin-bottom: var(--spacer); color: var(--gray-900); background-color: var(--yellow-100); border-radius: var(--border-radius); }
 
