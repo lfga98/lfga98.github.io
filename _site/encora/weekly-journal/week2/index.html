@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      LFGA &middot; Web
+    
+  </title>
+
+  
+  <link rel="canonical" href="/encora/weekly-journal/week2/">
+  
+
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>LFGA</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    <a class="sidebar-nav-item" href="/index.html">Home</a>
+    <a class="sidebar-nav-item" href="/encora/weekly-journal/week1">Week 1</a>
+    <a class="sidebar-nav-item" href="/encora/weekly-journal/week2">Week 2</a>
+
+
+
+
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">LFGA</a>
+            <small>Web</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <h1 class="center">Week 2 - What I learned</h1>
+<span class="post-date center">2021/04/13 to 2021/04/19</span>
+
+<br>
+
+<h2>Overview</h2>
+<br>
+<p>
+  This week we are going to learn and try to understand that a programming language
+  is just a tool and that having the right way of approaching it we can learn it quickly.
+  Also, we are going to see how software engineering is about people and not computers and
+  we have to worry about people and communication more than improving tools.
+</p>
+
+<hr>
+
+<h2>Videos</h2>
+<h3>Google I/O 2009 - The Myth of the Genius Programmer</h3>
+<strong>Things to note:</strong>
+<ul>
+  <li>There is no genius.</li>
+  <li>Feeling that nobody should look at your code or project and this inhibits
+  progress.</li>
+  <li>If you are in a cave trying to build something perfect is harder to improve your
+  skills.</li>
+  <li>If you don't show your research you could come with something already done.</li>
+  <li>Working in teams and communication is important.</li>
+  <li>Lose ego.</li>
+  <li>Criticism is not Evil.</li>
+  <li>Embrace failure. In new things not in something that you have already failed.</li>
+  <li>The faster you fail, the faster you iterate, the faster you learn.</li>
+  <li>Practice is the key.</li>
+  <li>Be a small fish.</li>
+  <li>Be influenced. Be open to new ideas.</li>
+  <li>Technology can solve social issues... in some cases.</li>
+  <li>Social behaviors of tools.</li>
+  <li>Involve collaborators... but... at a good time, not too early, not too late.</li>
+  <li>Sweet Spot.</li>
+  <li>There are no geniuses.</li>
+  <li>Collaborate early and often.</li>
+  <li>Pay attention to your tools.</li>
+  <li>Pay attention to timing. </li>
+</ul>
+<br>
+<strong>Discussion:</strong>
+<p>
+It's very interesting how these two guys are talking about software and they are
+focusing more on people than technical issues. I just noticed that they're talking about
+how to get better and what is true and false about genius, but from their
+corporate environment. I just want to point out that, well the advices are interesting, but let's just
+be careful because sometimes we are not in the same
+environment, but yeah... I liked most of them.
+</p>
+
+<p>
+What I take from this video is that is rare to find a genius. Genius exists,
+but don't always succeed. You need to learn how to collaborate and work in
+a team, they can help you a lot. We also need to learn how to receive criticism
+without taking it personally, it's really important to separate your friendship
+from work. We are small fishes and we need that to keep learning. Practice
+and fail, fail fast, learn fast, do a postmortem, write down everything you learned
+and keep going, don't fail again, you are in a team... so you didn't fail alone,
+look for help and keep going.
+</p>
+
+<br>
+<br>
+
+<h3>#perfmatters (Performance Matters)</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>There was a problem with performance in web applications running on mobile
+  web browsers. (I didn't know)</li>
+  <li>What you can measure, you can optimize.</li>
+  <li>Performance Tunning Loop.</li>
+  <li>Gather: Gather all the data, statics and reasons. You need to first, explain
+  to yourself why is it slow.</li>
+  <li>Insight: Get a reason and insight from data.</li>
+  <li>Action: Fix it!</li>
+  <li>Repeat it!</li>
+  <li>3 pillars of web performance:  Network, Render, and Compute</li>
+  <li>The network problem was to render the HTML on the screen, getting all the
+  HTML parsed in the screen. The Number of dependencies. Critical Path.</li>
+  <li>To solve it you could stop loading crit-path or resources(HTML,js,css)</li>
+  <li>Scrolling costs resources.</li>
+  <li>Make changes used to cost a lot of resources, needed to rebuild the whole
+    site.</li>
+  <li>Tools, not rules.</li>
+</ul>
+<strong>Discussion:</strong>
+<br>
+
+<p>I do not know that there had been so many performance problems with cell phones.
+He's mainly talking about phones, but I think the main topic or thing that
+he's to transmit is that there is no excuse to not be responsible for the performance
+of our application. He's telling us that we have the tools and methodology to fix
+performance issues and a very good example of how to use them. That's
+what I learned from here, there are a bunch of tools to measure and not
+only performance but other quality attributes. Let's get that and understand
+that is part of our job.</p>
+
+
+
+<br>
+
+<h3>Google I/O 2012 - The Art of Organizational Manipulation</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>Companies are made of people!!!</li>
+  <li>Learn how to navigate them (companies).</li>
+  <li>The ideal company.</li>
+  <li>Servant leadership. Leaders are not here to tell you how to do your job instead
+  there are here to remove the blockers. Make sure that everyone is happy and
+  efficient.</li>
+  <li>Pursue responsibility. Find things to do, don't only do what have told you
+    to do instead try to do something with your skills.</li>
+  <li>Communicate proactively. Communication is important!.</li>
+  <li>Act like an adult. Get your things done, your times, your work and no one
+  is going to tell you what to do. They trust that you are an adult.</li>
+  <li>Be responsible.</li>
+  <li>Take risks, do something, fail, fail fast, learn, write down what you learned
+  and try again.</li>
+  <li>We have bad managers... </li>
+  <li>Bad managers are too conservative, thinks you serve him, thinks you serve him,
+  </li>
+  <li>The real things in companies are unrealistic expectations, doesn't trust you,
+  directional chaos</li>
+  <li>Ask for forgiveness, not permission. Do what you feel is the correct thing.
+  Don't be scared.</li>
+  <li>Don't step in front of every train. Choose your fights!</li>
+  <li>Sneak ideas in.</li>
+  <li>Don't destroy, replace. Search for things that you don't like and replace them!</li>
+  <li>Work the ladder</li>
+  <li>Search for a safe place, change team, people, place, etc.</li>
+  <li>You're not going to win all the time, sometimes you have to lose.</li>
+  <li>You have to make things happen.</li>
+  <li>Networking is important!!</li>
+  <li>Ge along with everyone.</li>
+  <li>Don't mess with Administrative Assistants.</li>
+  <li>Plan B, always have one.</li>
+  <li>Don't be a victim. Look to other options.</li>
+  <li>Being successful in software engineering is not about just code, it's about
+  people and corporate politics. It's about effort. </li>
+
+</ul>
+<strong>Discussion:</strong>
+
+<p>This presentation is separated into 3 parts so the first one is the ideal company
+and they talk about managers and I liked what they say. First of all, I like the way
+they question managers' roles, is like how a manager should be and what they're
+doing. I also think that if someone is a manager, he should have a different
+way of thinking and acting, to a certain extent have mental health that allows him
+to behave well first with himself and then with others. He also mentions those people who
+do many things to become managers, but that does not mean they can. Some people go up a step
+and they fall. </p>
+
+<p>Yeah, we know that corporations are evil and all that stuff right, but I noticed
+that these guys are telling you that change can be made and starts with you. I liked
+the way they said it, I mean is not only to change but how... and these guys talk
+about things we can do. I liked that and yeah is true, sometimes we want to change
+things around us and we don't do a thing, we can start changing and inviting other
+guys to change too. We can do a lot of things, but it's about really doing it and
+if something goes wrong, then learn and keep going. Finally, if it's not working,
+then you are in the wrong place, don't be a victim, keep going.</p>
+
+<p>
+Just make sure where you do this and how you do it. Maybe you are not in the right
+place or time.
+</p>
+
+
+<br>
+
+<h3>Google I/O 2011: Programming Well with Others: Social Skills for Geeks</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>It's not all about the technical stuff, is about social.</li>
+  <li>Feedback of your code is important but if you aren't doing the right thing,
+  then it's useless.</li>
+  <li>Get everyone on the same page.</li>
+  <li>Culture perpetuates and is contagious.</li>
+  <li>If you're a manager, don't yell to software engineers instead clear the road.</li>
+  <li>If you don't have a leader, someone is going to take that role and it's not
+  necessarily bad, but it's different from being a manager.</li>
+  <li>Don't ask what to do next.</li>
+  <li>Autonomy, let them do their job the way they want to do it!. Let them free.</li>
+  <li>Mastery, let them improve themselves.</li>
+  <li>Purpose, make them feel like they are doing something important!</li>
+  <li>We motivate ourselves.</li>
+  <li>Don't waste energy on mad users.</li>
+  <li>It's about users' trust.</li>
+  <li>Have a good relationship with your users.</li>
+  <li>Listen to your users.</li>
+  <li>Learning to talk to non-technies is a skill.</li>
+  <li>Learning to talk to non-technies is hard.</li>
+
+</ul>
+<strong>Discussion:</strong>
+<p>This talk is similar to others, but this one is talking about users. Users
+are also stakeholders of the software industry and they are also part of
+our environment. That's why we build software. First thing, users could also
+be distractors, but we shouldn't waste our energy fighting them, because we aren't
+going to win, and sometimes they're just some trolls. Let's be nice with them and
+have them close because they are also guides for us. </p>
+
+<p>Another thing that was mentioned in the presentation and I agree with this! It's
+to talk to non-technies is really important. It's important because you will
+able to get some clues and ease your work if you make your client, or whatever person that
+you're helping, tell you more about their problem or need this will ease a lot
+of the job of understanding. In my opinion, we are the technical people if we can't
+conceptualize something hard into something easy that means that we aren't understanding at
+all.</p>
+
+<br>
+
+<h3>The Best Programming Language</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>There is no best programming language.</li>
+  <li>Choose the language based on your situation.</li>
+  <li>Criteria to choose a programming language.</li>
+  <li>Productivity: How fast you do things.</li>
+  <li>Performance. It depends on what you're doing, but don't worry too much about it
+  languages are fast but it depends on your needs. Do I need to be that fast?</li>
+  <li>Reliability. It depends, but you are not going to use a language that is likely
+  to fail in web applications</li>
+  <li>Portability. Consider in which devices the application is going to run.</li>
+  <li>Community. People, libraries, forums, and tutorials that could help you.
+    Depending on your needs and your knowledge you should consider this. Makes your job easier.
+  </li>
+  <li>Sometimes you have to realize that some languages are built for one purpose and
+  maybe changing to that language could ease your work.</li>
+  <li>The best language is not the one that you know.</li>
+  <li>Trying a new language sometimes takes time and effort, but you will have
+  a new tool and maybe your problem solved.</li>
+  <li>No bests. Trade-offs.</li>
+
+</ul>
+<strong>Discussion:</strong>
+
+<p>
+  Like this guy said, and I agree, language and frameworks are just tools.
+  Depending on our needs, we need to choose a tool, we can't use the language
+  we know for everything, because maybe that tool wasn't built for that purpose.
+  We need to understand what we need and based on the criteria that we saw in the
+  talk. The two main things here are that there isn't the best language and using
+  a language just because you know it, could not the best choice. Sometimes we just
+  need to dare to try new things and get out of the things we know. Maybe trying
+  to learn a new language and using it, could ease our work or task.
+</p>
+
+
+<br>
+
+<h3>Developing Expertise: Herding Racehorses, Racing Sheep</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>Software is not written by tools, languages, frameworks, software is written
+  by people.</li>
+  <li>Software tools and development environments have changed (improved) and bug
+    rating is still constant.</li>
+  <li>If we want to make better software we have to do better people.</li>
+  <li>What can you for your team to be better?</li>
+  <li>Team members:</li>
+  <li>The wizard: Knows everything.</li>
+  <li>Novice: Needs a recipe. We need to know how things work.</li>
+  <li>We give persons in teams the same recipe and instructions when they
+    work differently and have different needs.</li>
+  <li>We label people.</li>
+  <li>As you become an expert we use more intuition.</li>
+  <li>Novices can get confused.</li>
+  <li>As you do something constantly you assimilate it. That's how you begin to do things.</li>
+  <li>Advance beginner: They start doing things by themselves, but they can't do everything.</li>
+  <li>Competent: Can do more things by themselves, have difficulty troubleshoot. Feel smarter.</li>
+  <li>Proficient: They feel like they are going backward. They ask 'why'. Want to understand larger
+    concepts. Learn from others' experiences.</li>
+  <li>Expert: They can explain things in metaphors. Facts are not enough. Work primarily from intuition.
+    Always seeking information.</li>
+  <li>Dreyfus Model.</li>
+  <li>Treat people differently, they are in a different stage and have different needs.</li>
+  <li>Can't race sheep.</li>
+  <li>Can't herd racehorses.</li>
+  <li>Competent people: Take risks.</li>
+  <li>Understand what happens in our companies and our careers.</li>
+  <li>Communicate, get a number (level) and try to be treated like that.</li>
+  <li>Let the experts be the experts.</li>
+  <li>Experience makes us valuable.</li>
+  <li>Have a plan. Diversify. Look for value. Invest regularly.</li>
+  <li>Experience comes from practice, not knowledge.</li>
+
+</ul>
+
+
+<strong>Discussion:</strong>
+<p>
+  First of all, I noticed that this is a problem that has existed for a long time
+   and there is still no solution, but the good thing is that experts have started
+    talking about it. The first thing that they say is that building software is
+    about people and that if we keep putting bugs in our code it's because of people
+    and not tools. They are going to the source of the problem, in my opinion, this a
+    good approach to solve the problem and I'm also happy that they recognize that we
+    are different from computers and we need to be treated differently.
+</p>
+<p>
+  That's the main thing that I take with me, we can't be treated the same way.
+  We have different knowledge, experience, and needs. I like the way he is trying
+  to say that you don't have to lock someone up in their role, let them be free
+  they are going to do things a different way and it's not bad it's just different.
+  Finally, I loved the invitation he makes to determine how we see things, maybe
+  you aren't doing the right questions and to approach the problem differently.
+  Understand your team, what they're doing and what they need.
+</p>
+
+
+
+<br>
+
+<h3>Perfection Is An Unrealistic Goal</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>Nobody likes to read code, all prefer writing.</li>
+  <li>We don't know the specification.</li>
+  <li>We think that agile is going to take us to a 'Nirvana'.</li>
+  <li>We can't get everything right.</li>
+  <li>We are hard-wired to lie to us.</li>
+  <li>We lie to ourselves and others.</li>
+  <li>Agile is about going in circles (cycles).</li>
+  <li>Everything changes, even goals.</li>
+  <li>Trial and error.</li>
+  <li>Sleep: 90 minute cycles.</li>
+  <li>We are not linear, we are cycling.</li>
+  <li>The survivor was agile.</li>
+  <li>Being productive is not multitasking or do more things.</li>
+  <li>Take a break, don't work a lot of hours. Play.</li>
+  <li>Try little things.</li>
+  <li>Try a different way.</li>
+  <li>Consciousness is not that smart.</li>
+</ul>
+
+<strong>Discussion:</strong>
+<p>
+  Yes!, what Linda said, in my opinion, is completely true, we are trying to do
+  things, and sometimes we don't even know what we have to do. We lose things, we
+  forget things and that's why the things we do can't be perfect. To state this, first,
+   we need to understand some basic functions that our brain does, and we need to adapt to
+   how it works, the brain is not going to change, it's hard-wired. Continuous work is not
+   doing something productive. Take breaks, and to take breaks is letting the unconscious
+   work. Work different.
+</p>
+
+
+<br>
+
+<h3>The Power of an Agile Mindset</h3>
+<strong>Things to note:</strong><br>
+
+<ul>
+  <li>You can't change intelligence.</li>
+  <li>You can learn new things, but you can't change intelligence.</li>
+  <li>The agile mindset is to understand that you can learn.</li>
+  <li>You face limitations, but you can grow.</li>
+  <li>Agile mindset is about going back and improve.</li>
+  <li>Agile mindset -> Give me the chance to learn.</li>
+  <li><img class="center-img" src="/assets/encora/weekly/week2/fvsa.png" alt="how"></li>
+  <li>Do things that you can do.</li>
+  <li>Failure also teaches you.</li>
+  <li>Agile mindset is less positive/negative about others.</li>
+  <li>Boys and girls are treated differently so they develop a different mindset.</li>
+  <li>Managers have a mindset.</li>
+  <li>Managers label people. Treat people depending on the mindset.</li>
+  <li>Teams have a mindset.</li>
+  <li>Fixed educational system.</li>
+  <li>We're born agile.</li>
+  <li>The effort is good. Strategy is all!. Praise the effort.</li>
+  <li>Agile is about effort.</li>
+  <li>Agile is also about cultural differences.</li>
+  <li>You can make a small change in any environment.</li>
+</ul>
+
+
+<strong>Discussion:</strong>
+
+<p>
+  It's true... we encounter people that don't want to do a thing!. I mean they
+  just do the basic and they think they deserve everything, and the truth is
+  that nothing is free, everything costs. If you want to learn, achieve something
+  or do something, it's going to take time and effort! You can find people quitting
+  things because "they aren't good enough" and they have only been doing that a
+  couple of months. That's what I liked about the talk, the message that is giving.
+  Again, we have to change our minds and how we see things. I believe that everything
+  requires effort and with only intelligence, you're not going to what you want.
+
+</p>
+
+
+<br>
+<br>
+
+<h3>Who do you Trust?</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>Everyone is prejudiced.</li>
+  <li>We judge without any information.</li>
+  <li>We tend to think our group is better.</li>
+  <li>We do this when we meet new people.</li>
+  <li>We put people in little boxes.</li>
+  <li>Vast labelers of everything.</li>
+  <li>We have the power to make people think that they aren't enough.</li>
+  <li>Managers are labeling before seeing the performance.</li>
+  <li>We label ourselves.</li>
+  <li>Stereotypes are prophetic.</li>
+  <li>We set expectations.</li>
+  <li>Working together is a more powerful driver for our decisions. </li>
+  <li>We love collaboration.</li>
+  <li>Cooperation on shared goals.</li>
+  <li>You don't have to like everyone. Just respect and trust.</li>
+  <li>Collaboration increases performance in achievement of something.</li>
+</ul>
+<strong>Discussion:</strong>
+<p>
+  A very hard topic to talk about, but yes we all do that, when we meet someone
+  we always judge them, and is something natural, is not going to stop. We can do
+  some things like being aware, which is the main topic. Yes, you are going to pre-judge,
+  but try not to label, try to take those things apart. Also, we need to understand
+  that we can't do things by ourselves, so we need to cooperate and maybe is not for
+  a common goal. The last thing, as we need to trust others, we need to be trusted and
+  trust is not a gift, we need to win it in some way, so just to be aware of that.
+</p>
+
+<br>
+
+
+
+<h3>Everything is a remix.</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>The first video is making a comparison between some "knockoffs" done by Led Zeppelin.</li>
+  <li>Genre exists.</li>
+  <li>Everything takes parts from done things.</li>
+  <li>We can call these done stuff templates.</li>
+  <li>Creation requires influence.</li>
+  <li>Copying is how we learn.</li>
+  <li>Nobody starts original. After that everything gets interesting.</li>
+  <li>Mixing ideas is the point.</li>
+  <li>Basic elements of creativity: copy, transform, and combine.</li>
+  <li>Mac is a combination.</li>
+  <li>Combination of work of others.</li>
+  <li>Innovations are the result of a combination.</li>
+  <li>Evolution: copy, transform and combine.</li>
+  <li>The original product can't be cheaper than the copy.</li>
+  <li>Copying is restricted.</li>
+  <li>We are territorial with our ideas.</li>
+  <li>We restricted a source of ideas.</li>
+  <li>Common good. Social evolution.</li>
+</ul>
+<strong>Discussion:</strong>
+
+<p>
+  I think that the main message that we need to understand is that we don't have
+  a real reason to not share our ideas and our knowledge. Like the video showed
+  the best ideas in the world came from other ideas and influences. Another thing
+  that I take with me is that copying is not that bad, we can start doing things
+  copying others and trying to be others, but later on we need our style and that
+  is when the fun begins.
+
+</p>
+
+
+
+<h3>Compressor series (3 videos. )</h3>
+<strong>Things to note:</strong><br>
+<ul>
+  <li>Compression is to reduce the size of files.</li>
+  <li>The probability of character appearing is important.</li>
+  <li>Shortest code in more probable characters in a string.</li>
+  <li>To encrypt we use the encoding table.</li>
+  <li>To create a good decryption algorithm we need to assign the correct amount of bits.</li>
+  <li>Prefix properties no one can share the prefix of other letters.</li>
+  <li>Unary code. Equals probability.</li>
+  <li>A Huffman tree uses a binary tree and branches are given a 0 or a 1. The
+    representation of that character is given by the path from the node to the root.</li>
+  <li>We have to consider variables length and entropy for our compression algorithm.</li>
+  <li>Entropy minimum number of bits needed per symbol on average to represent your data stream.</li>
+  <li>You need to understand your data to understand the entropy and length.</li>
+  <li>To reduce entropy we can group characters in words.</li>
+  <li>We need a dynamic grouping.</li>
+  <li>LZ78 and LZ77</li>
+  <li>Statical encoding.</li>
+  <li>LZ78 and LZ77 powers the most famous and used compression algorithms.</li>
+  <li>Markov models (See it later)</li>
+  <li>Markov model assigns bits to transitions of the states.</li>
+  <li>Markov invented an algorithm for predicting.</li>
+  <li>Markov compressor encodes a string by looking at a letter and noting the transitions
+  to the following letter. </li>
+  <li>The number of bits to assign to a transition depends on the max number of transitions that we have.</li>
+  <li>VLC for transitions.</li>
+  <li>We need a frequency table for decompression.</li>
+  <li>The encoder is going to change in every letter.</li>
+  <li>IA is going to run a compressor in the future.</li>
+
+</ul>
+
+<strong>Discussion:</strong>
+
+<p>
+Sorry, I think it's a lot of information for those "short" videos, I didn't understand
+them very well the part 3. Also, he's going too fast. Anyway, in software engineering,
+there's also this kind of area that worries about data compression or structures and
+datastreams performance, and is very interesting how algorithms evolve and how they change.
+Another thing is that things are done differently now we don't have to wait for big scientists
+to create new algorithms, we can do it or in the future, the IA is going to be in charge.
+Another thing is that we as software builders, we need to know how to use these tools to
+create better software.
+</p>
+
+<br>
+
+<hr>
+
+
+<h2>Readings</h2>
+
+<h3>Collaboration, Bonobos and The Brain</h3>
+
+
+<p>I didn't know that we were like bonobos and that bonobos were so different from chimpanzees.</p>
+<img class="center-img" src="/assets/encora/weekly/week2/bonobos.jpeg" alt="how">
+
+
+<p>
+It was a really fun interview, but interesting. Linda says that it is important
+to understand the brain and how it works. Because this will enable better performance
+in software building. Now, Linda is saying that we make decisions unconsciously and
+that we need the two parts to make decisions the conscious takes the data and
+constraints that we have and the unconscious takes that data and comes up with
+solutions. And yes, I think this a great part and we need to take advantage of this
+and maybe we are already doing it!. Let's sleep well.
+</p>
+
+<p>
+Now... in a part of the interview, they started to talk about chimpanzees and bonobos.
+This has to do with the brain and the evolution and biological roots, we are wired
+to work with a small group of people because we used to that in caves. This is related
+to pair and agile programming. In this programming methodology, we can create ways or
+"rituals" to communicate, work or solve a problem. What I can see here is that we are
+prepared or "wired" to work as agile methodologies and not to work in large teams
+without any communication.
+</p>
+
+<p>
+Now, I also liked the comparison of how we work and that we are so far to live together
+like chimpanzees. By evolution and biological roots, we are not like that, and
+the way we work to build software has to change.
+</p>
+
+
+
+<br>
+
+
+<hr>
+<h2>Technical, practice, or coding activities.</h2>
+
+<br>
+<h3>Missing semester: Shell tools and scripting</h3>
+<br>
+<p>In this section, we review some things regarding bash and scripting. In going
+  to paste my notes here. If I need it I can come back here.</p>
+<a href="https://missing.csail.mit.edu/2020/shell-tools/">Shell Tools and Scripting</a>
+<br>
+<br>
+<img class="center-img" src="/assets/encora/weekly/week2/SS1.png" alt="shell1">
+<img class="center-img" src="/assets/encora/weekly/week2/SS2.png" alt="shell2">
+<img class="center-img" src="/assets/encora/weekly/week2/SS3.png" alt="shell3">
+<img class="center-img" src="/assets/encora/weekly/week2/SS4.png" alt="shell4">
+<img class="center-img" src="/assets/encora/weekly/week2/SS5.png" alt="shell5">
+<img class="center-img" src="/assets/encora/weekly/week2/SS6.png" alt="shell6">
+<img class="center-img" src="/assets/encora/weekly/week2/SS7.png" alt="shell7">
+<img class="center-img" src="/assets/encora/weekly/week2/SS8.png" alt="shell8">
+
+
+
+<br>
+<h3>Queues and Stacks</h3>
+<br>
+<p>In this section, we reviewed some things regarding Queues and Stacks. I'm going to
+paste my notes here. If I need it I can come back here. I solved the problem (Code in onedrive). </p>
+<img class="center-img" src="/assets/encora/weekly/week2/QS.png" alt="Qs">
+<br>
+
+<h3>Google code jam</h3>
+<br>
+<p>
+  This week we had to solve a competitive programming problem in different languages.
+  I had to code it using Haskell. I've to say that is not an easy task. In my opinion,
+  is easy to solve a problem have pseudocode and write the coding language that you need.
+  This time was different, Haskell is a functional programming paradigm language so
+  everything works differently. You have to think differently, I mean if you want to
+  modify data you can't do it that well, there are some restrictions, you can only do
+  this through functions and more restrictions. No traditional loops. No assignments or
+  sums, etc. I know that languages are just a tool, but a paradigm is a whole new thinking
+  process and a whole new programming process. That was the harder part using Haskell and I
+  didn't have a lot of time. I got to a solution... it's not passing all the test cases but
+  the firsts ones are passing.
+</p>
+
+<p>
+  Anyway, I had a bad time trying to solve it, but I used some of my new knowledge.
+  I didn't search for everything or see a course, because I don't have time enough,
+  but instead, I tried to master everything fast. I searched for everything I may
+  need and learned all those things and put it into my code. So, I jumped a lot of
+  things that right now are not essential, and manage to finish it that way. What
+  it's more interesting about doing this is that you get something new, like functional
+  programming and you realize that you have to do things differently, and you start from 0,
+  you just keep going forward trying to learn new things and you get to the point where
+  you have enough information to give a possible solution with the resources you have.
+  This had to be and it was so agile, using the previous knowledge about learning fast
+  is how I tried to get out of this. Sometimes the only resource you have is the ability to
+  learn new things.
+</p>
+
+<p>
+  To finish this section, I got to a point where I got stuck because I couldn't get
+  the idea of doing a function to do things that it could be done with a simple loop.
+  My mentors gave me a new perspective by asking me a question: What is the main purpose
+  of coding in a functional paradigm? When I searched for information about that, my way
+  of structuring the code changed and that's how I changed my perspective and opened my mind
+  to something new and finally, I could get to something. Sometimes is just a perspective issue,
+  you have to see things differently and try to understand the source of that issue.
+  These were my main lessons from this exercise.
+</p>
+<br>
+
+
+<hr>
+<h2>Conclusions</h2>
+
+<p>
+  A lot of things to note and learned this week. Things that I take with me!.
+  We all need from others, that's why work in teams, we are not geniuses and
+  we can't solve and know everything by ourselves. Working in a team also means
+  that we are open to receive feedback and change the way we think and also learn
+  from everyone. To make this work we need a lot of communication. Also, we need to
+  understand that these teams of people are what builds software, not companies or
+  computers. People are humans and have their problems, knowledge, and needs so this
+  is what managers and companies need to understand and are starting to change. If
+  we aren't feeling good, our needs aren't satisfied or we have bad communication
+  then we can't work properly. Finally, there a lot of things that we can do to change
+  things and to improve the environment, don't be a victim, try to change. Software is about people.
+</p>
+
+<p>
+  Finally, let's talk about languages and programming. Languages are tools and it
+  has to be treated like that, you just use the tool depending on the problem. We can
+  learn new things and fast but we just need to know what we need to learn. We are
+  the builders and what builds software is ous not the language or the framework, so
+  let's improve the way we learn and other soft skills and trying to understand the
+  usage of new things and your perspective of things can help you a lot to learn or master
+  new things.
+</p>
+
+<br>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
